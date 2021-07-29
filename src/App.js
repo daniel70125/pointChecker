@@ -1,23 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Points from './components/Points';
+import {useState} from 'react'
+import users from './users.json';
 
 function App() {
+  const [totalValue, onChange] = useState('a');
+  function add(x){
+    const inputTotal = document.querySelector('#input-total');
+    onChange(x.target.value)
+  }
+  const user = users.map((elm, index) => {
+    return (
+      <Points totalValue={totalValue} elm={elm} index={index} key={index} />
+    )
+  })
+  // console.log(users)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div id='app-cont-1'>
+        <h1 id='app-h1'>Point Checker !</h1>
+      </div>
+      <div id='app-user-wrapper'>
+        {user}
+      </div>
     </div>
   );
 }

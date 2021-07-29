@@ -1,0 +1,22 @@
+[
+    {
+        "name":"Anthony Adams",
+        "transactions":[20.24, 136.21, 73.98, 31.44, 69.33]
+    },
+    {
+        "name":"Bethany Brooks",
+        "transactions":[64.46, 88.00, 52.00, 29.38, 3.21]
+    },
+    {
+        "name":"Caleb Caldwell",
+        "transactions":[213.21, 188.00, 44.32, 81.63, 166.03]
+    },
+    {
+        "name":"Derrick Dales",
+        "transactions":[38.00, 2.00, 3.00]
+    },
+    {
+        "name":"Edward Ellington",
+        "transactions":[13.52, 73.90, 7.63]
+    }
+]
