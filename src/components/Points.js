@@ -30,10 +30,10 @@ const Points = (props) => {
                 <span className='points-span-total'>Total: ${Math.floor(totalSpent)}</span>
             <p className='points-rules'>2 Points for each dollar spent over $100</p>
                 <span>${Math.floor(totalSpent)} - $100 = ${Math.floor(totalSpent) >= 100 ? Math.floor(totalSpent) - 100 : 0}</span> <br />
-                <span>${Math.floor(totalSpent) >= 100 ?  Math.floor(totalSpent) - 100 : 0} x 2 points = {Math.floor(totalSpent) >= 100 ? (Math.floor(totalSpent) - 100) * 2 : 0} points</span>
+                <span>${Math.floor(totalSpent) >= 100 ?  Math.floor(totalSpent) - 100 : 0} x 2 points = {over100Points} points</span>
             <p className='points-rules'>1 Point for each dollar spent over $50</p>
                 <span>${Math.floor(totalSpent) >= 100 ? 100 : Math.floor(totalSpent)} - $50 = ${Math.floor(totalSpent) >= 100 ? 100 - 50  : Math.floor(totalSpent) < 100 && Math.floor(totalSpent) >= 50 ? Math.floor(totalSpent) - 50 : 0 }</span> <br />
-                <span>${Math.floor(totalSpent) >= 100 ? 100 - 50 : Math.floor(totalSpent) < 100 && Math.floor(totalSpent) > 50 ? Math.floor(totalSpent) - 50  : 0} x 1 points = {Math.floor(totalSpent) >= 100 ? 100 - 50 : Math.floor(totalSpent) < 100 && Math.floor(totalSpent) > 50 ? Math.floor(totalSpent) - 50 : 0  } points</span>
+                <span>${Math.floor(totalSpent) >= 100 ? 100 - 50 : Math.floor(totalSpent) < 100 && Math.floor(totalSpent) > 50 ? Math.floor(totalSpent) - 50  : 0} x 1 points = { over50Points } points</span>
                 <br />
                 <br />
                 <p className='points-rules'>Total: </p>
